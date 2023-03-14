@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400;1,500&family=Lato:wght@100;300&family=Montserrat:wght@300;400;500;600;700;900&family=Praise&family=Ubuntu:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+	font-size: 20px;
+	background-color: rgb(49, 3, 49);
+	color: white;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li {
+	margin-left: 1vh;
+	list-style: none;
+}
+
+.gameContainer {
+	/* background-color: chartreuse; */
+	border-radius: 10px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: repeat(3, 10vw);
+	grid-template-columns: repeat(3, 10vw);
+}
+
+.box {
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 5vw;
+}
+
+.box:hover {
+	cursor: pointer;
+	background-color: rgb(234, 223, 243);
+}
+
+.gameInfo {
+	margin: 0 34px;
+	font-family: "Kanit", sans-serif;
+}
+
+.imgbox {
+	display: flex;
+}
+
+.imgbox img {
+	width: 0;
+	transition: width 1s ease-in-out;
+}
+
+.bt-0 {
+	border-top: 0;
+}
+.br-0 {
+	border-right: 0;
+}
+.bb-0 {
+	border-bottom: 0;
+}
+.bl-0 {
+	border-left: 0;
+}
+
+#reset {
+	margin: 0 22px;
+	padding: 3px 12px;
+	border-radius: 4px;
+	background-color: rgb(226, 212, 239);
+}
+
+#reset:hover {
+	cursor: pointer;
+}
+
+.info {
+	font-size: 25px;
+}
+@media screen and (max-width: 800px) {
+	.container {
+		display: grid;
+		grid-template-rows: repeat(3, 20vw);
+		grid-template-columns: repeat(3, 20vw);
+	}
+	.gameContainer {
+		flex-wrap: wrap;
+	}
+	.gameInfo {
+		margin-top: 34px;
+	}
+	.gameInfo h1 {
+		font-size: 1.5rem;
+	}
+	.imgbox {
+		justify-content: center;
+		margin-right: 60px;
+	}
+}
